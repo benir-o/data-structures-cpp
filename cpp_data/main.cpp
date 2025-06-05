@@ -18,7 +18,8 @@ double multiplyNum(int a, int b)
 int main()
 {
 
-    cout << addNum(5, 10) << endl; // Output: 15
+    cout << addNum(5, 10) << endl; 
+    // Output: 15
     // Standard template library
     return 0;
 }
