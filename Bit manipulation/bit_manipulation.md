@@ -5,9 +5,9 @@ This document covers fundamental bitwise operations in C++ with examples.
 ## Bitwise Operators
 
 | Operator | Name             | Example  | Description                             |
-| -------- | ---------------- | -------- | --------------------------------------- | --- | ------------------------------------------ |
+| -------- | ---------------- | -------- | --------------------------------------- |
 | `&`      | AND              | `a & b`  | Sets each bit to 1 if both bits are 1   |
-| `        | `                | OR       | `a                                      | b`  | Sets each bit to 1 if one of two bits is 1 |
+| `        | `                | OR       | `a                                      |
 | `^`      | XOR              | `a ^ b`  | Sets each bit to 1 if only one bit is 1 |
 | `~`      | NOT (Complement) | `~a`     | Inverts all the bits                    |
 | `<<`     | Left Shift       | `a << n` | Shifts bits left by n positions         |
