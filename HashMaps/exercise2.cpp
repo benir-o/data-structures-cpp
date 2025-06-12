@@ -1,23 +1,27 @@
 #include <iostream>
 #include <map>
+#include <unordered_map> //This is a hashtable
 using namespace std;
 
+struct CityRecord
+{
+    string Name;
+    int Population;
+    double Latitude, Longitude;
+};
 int main()
 {
-    map<int, string> people = {{1, "Vici"}, {2, "Alicia"}, {3, "Malcolm"}};
+    vector<CityRecord> cities;
+    cities.emplace_back("Nairobi", 5000, 1.1, 47.0);
+    cities.emplace_back("Kisumu", 80000, 1.3, 46.2);
+    cities.emplace_back("Mombasa", 10000, 0.9, 47.3);
 
-    // Inserting key value pairs
-    people[4] = "Benir";
-    people[5] = "Richarlisson";
-
-    // printing a value
-    cout << people[1] << " ";
-    cout << endl;
-
-    // printing all key value pairs
-    for (auto kvpair : people)
+    for (const auto &city : cities)
     {
-        cout << kvpair.first << "--> " << kvpair.second << endl;
+        if (city.Name == "Kisumu")
+        {
+            cout << city.Population;
+        }
     }
     return 0;
 }
